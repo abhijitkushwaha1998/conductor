@@ -42,7 +42,7 @@ dependencies {
     implementation "io.orkes.queues:orkes-conductor-queues:${revOrkesQueues}"
 
     implementation "org.springdoc:springdoc-openapi-ui:${revOpenapi}"
-
+    runtimeOnly group: 'com.netflix.conductor', name: 'conductor-postgres-persistence', version: '3.13.5'
     runtimeOnly "org.glassfish.jaxb:jaxb-runtime:${revJAXB}"
 
     testImplementation project(':conductor-rest')
